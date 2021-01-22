@@ -1,0 +1,319 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+header {
+    display: flex;
+    width: 100%;
+    background-color: #5B6C94;
+    position: fixed;
+    justify-content: space-between;
+
+}
+
+header img {
+    max-height: 3em;
+    max-width: 3em;
+    margin-left: 10px;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+nav a {
+    margin-right: 4em;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+
+#menu-icon {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: none;
+}
+
+#menu-icon span {
+    margin-right: 40px;
+    margin-bottom: -12px;
+    font-size: 25px;    
+    
+}
+
+nav a:hover {
+    color:white
+}
+
+#submit:hover {
+    background-color: #031D5B;
+    cursor: pointer;
+}
+#nav-toggle {
+    display: none;
+}
+
+
+.intro{
+    padding:6em 0;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: auto;
+    background-color: #F8765E;
+}
+
+.intro-body {
+    width: 50%;
+    min-width: 280px;
+    margin: auto;
+ 
+}
+.intro h1 {
+    color: #031D5B;
+    margin-bottom: 1.25em;
+
+}
+
+.intro p {
+    color: #5B6C94;
+    margin-bottom: 1em;
+    max-width: 530px;
+}
+
+.intro img {
+    max-width: 90%;
+    min-width: 250px;
+    margin: 40px auto;
+}
+
+.intro img:hover {
+    transform: scale(1.1);
+}
+
+#email {
+    width: 55%;
+    height: 3em;
+    border: none;
+    border-radius: 20px;
+    box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+#submit {
+    width: 25%;
+    height: 3em;
+    border: none;
+    border-radius: 20px;
+    background-color: #9BDBE7;
+    color: white;
+}
+
+.benefit {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 100px 20px;
+    max-width: 80%;
+    margin: -50px auto;
+    border-radius: 40px;
+    box-shadow: 0px 10px 34px rgba(0, 0, 0, 0.15);
+    
+
+}
+.benefit-card:hover {
+    transform: scale(1.2);
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+    #nav-toggle:checked ~ nav a {
+        display: flex;
+    }
+    .nav-link:active ~ #nav-toggle {
+        
+    }   
+
+    label {
+        display: inline;
+        margin-bottom: 20px;
+        cursor: pointer;
+        
+    }
+    .nav-container {
+        display: flex;
+        flex-direction: column;  
+    }
+    nav {
+        align-items: center;
+        width: 100%;
+        margin: 0 20px;
+    }
+    nav a {
+        display: none;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+  .benefit, .pricing {
+      flex-direction: column;
+      align-items: center;
+      align-content: space-around;
+  }
+  .price-card {
+      margin-bottom: 80px;
+  }
+  .price-card:hover {
+      transform: scale(1.05);
+  }
+  .benefit-card{
+    margin: 2em auto;      
+  }
+  .benefit-card:hover {
+    transform: scale(1.05);
+   
+} 
+
+
+}
+
+.benefit-card {
+    display: flex;
+    flex-direction: column;
+   
+    
+
+}
+
+.benefit-card img {
+    width: 200px;
+    height: 140px;
+}
+
+.benefit-card p {
+    max-width: 300px;
+}
+
+iframe {
+    width: 60%;
+    height: 40vw;
+    margin-left: 20vw;
+    border-radius: 2vw;
+    box-shadow: 2px 10px 34px rgba(83, 51, 237, 1);
+    
+}
+
+.pricing {
+    margin:50px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.price-card {
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    min-width: 300px;
+    background: white;
+    align-items: center;
+    box-shadow: 12px 12px 40px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    
+}
+.price-card:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+h2 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 900;
+    margin-top: 2rem;
+    color: #F8765E;
+}
+
+.price-card h3 {
+    align-self: center;
+    font-size: 3rem;
+    color: #031D5B;
+}
+
+.price-card span {
+    align-self: center;
+    font-size: 2.3rem;
+    color: #F8765E;
+}
+
+.price-card ul {
+    min-height: 150px;
+    margin-top: 10px;
+}
+
+.price-card li {
+    list-style: none;
+    line-height: 32px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.price-card button {
+    width: 128px;
+    height: 40px;
+    background: #9BDBE7;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    
+}
+
+.price-card button:hover {
+    background-color: #031D5B;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F8765E;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+  
+}
+footer li {
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px;
+    cursor: pointer;
+
+}
+
+footer p {
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}
